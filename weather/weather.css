@@ -1,0 +1,167 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Vina+Sans&family=Work+Sans:wght@800&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'Work Sans', sans-serif;
+
+    font-weight: bold;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(97, 82, 82, 0.1);
+}
+
+.container{
+    width: 500px;
+    height: min-content;
+    background-color: rgba(146, 126, 126, 0.3);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.search{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search input{
+    width : 50%;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: black;
+    background-color: rgb(218, 228, 238);
+    padding: 10px 16px;
+    border-radius: 25px;
+}
+
+.search input::placeholder{
+    color: black;
+}
+
+.search button{
+    width: 50px;
+    height: 50px;
+    border-radius: 48px;
+    cursor: pointer;
+    background-color:rgb(223, 226, 230);
+}
+
+.search button:hover{
+    cursor: pointer;
+    background-color: rgb(231, 234, 238);
+    
+}
+
+.weatherbody img{
+    margin-top: 7%;
+    width: 40%;
+
+}
+
+.weatherbody {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-block: 25px;
+
+}
+
+.weather-box{
+    margin-block: 20px;
+    text-align: center;
+}
+
+.weather-box .Temprature{
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+}
+
+.weather-box .Description{
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.weather_details .material-symbols-outlined {
+    font-size: 30px;
+
+}
+
+.weather_details
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.humidity, .windspeed
+{
+    display: flex;
+    align-items: center;
+}
+
+.humidity
+{
+    margin-left: 20px;
+}
+
+.windspeed
+{
+    margin-right: 20px;
+}
+
+.weather_details .material-symbols-outlined
+{
+    font-size: 30px;
+}
+
+.weather_details .text
+{
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.weather_details .text span
+{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+.so_error 
+{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+}
+
+.so_error h1
+{
+    font-size: 20px;
+    color: rgb(180, 180, 58);
+    margin-block-end: 20px;
+}
+
+.so_error img
+{
+    width: 70%;
+}

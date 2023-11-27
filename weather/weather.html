@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="weather.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="search">
+        <input type="text" placeholder="Enter City Name" class="inputbox">
+
+        <button class="material-symbols-outlined" id="button">
+          search
+        </button>
+      </div>
+    </div>
+
+    <div class="so_error">
+      <h1>Location Not Found</h1>
+      <img src="img/error.png" alt="" srcset="">
+    </div>
+
+    <div class="weatherbody">
+      <img src="img/clear-sky.png" alt="" srcset="" class="img_weather">
+      <div class="weather-box">
+        <p class = "Temprature"> 0°C </p>
+        <p class = "Description"> Light Rain</p>
+      </div>
+
+      <div class="weather_details">
+        <div class="humidity"> 
+          <span class="material-symbols-outlined">
+            humidity_mid
+          </span>
+          <div class="text">
+            <span id="humidity">56%</span>
+            <p>Humidity</p>
+          </div>
+        </div>
+
+        <div class="windspeed"> 
+          <span class="material-symbols-outlined">
+            airwave
+          </span>
+          <div class="text">
+            <span id="windspeed">12 Km/H</span>
+            <p>WindSpeed</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+  </div>
+
+  <script src="weather.js"></script>
+  
+</body>
+</html>
